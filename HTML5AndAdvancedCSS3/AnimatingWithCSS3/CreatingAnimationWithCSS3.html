@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5</title>
+    <style>
+      #moveMe {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        position: relative;
+        animation: mymove 5s infinite;
+        -webkit-animation: mymove 5s infinite; /*safari chrome opera*/
+        -ms-animation: mymove 5s infinite; /* ie 9 & 10*/
+        -moz-animation: mymove 5s infinite; /*moz*/
+      }
+      @keyframes mymove {
+        /* ie11 & firefox */
+        from {
+          left: 0px;
+        }
+        to {
+          left: 300px;
+        }
+      }
+      @-ms-keyframes mymove {
+        /* ie 9 & 10*/
+        from {
+          left: 0px;
+        }
+        to {
+          left: 300px;
+        }
+      }
+      @-webkit-keyframes mymove {
+        /*safari chrome opera*/
+        from {
+          left: 0px;
+        }
+        to {
+          left: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="moveMe"></div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+div.home:hover {
+  background-color: orange;
+  color: white;
+}
+div.faq:hover {
+  background-color: orange;
+  color: white;
+}
+div.about:hover {
+  background-color: orange;
+  color: white;
+}
+div.careers:hover {
+  background-color: orange;
+  color: white;
+}
+div.contact:hover {
+  background-color: orange;
+  color: white;
+}
+div.home {
+  width: 150px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+div.faq {
+  width: 150px; 
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+div.about {
+  width: 150px; 
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+div.careers {
+  width: 150px; 
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+div.contact {
+  width: 150px; 
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+#nav {
+  background-color: #5acbda; 
+  width: 900px; 
+  height: 50px; 
+  float: left;
+}
+#content {
+  background-color: #b6ff00; 
+  width: 900px; 
+  height: 700px;
+}
+#footer {
+  background-color: #808080; 
+  width: 900px; 
+  height: 100px;
+}
+#banner {
+  width: 900px; 
+  height: 100px; 
+  background-color: #ff6a00;
+  display: table-cell;
+  vertical-align: middle;
+}
+#wrapper {
+  width: 900px; 
+  height: 700px;
+  margin: 0 auto;
+}
+a:link {
+  color: #ffd800;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}

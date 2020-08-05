@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a {
+      text-decoration: none;
+    }
+    nav ul {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 14pt;
+      color: blueviolet;
+      text-decoration: none;
+    }
+    nav ul ul {
+      display: none;
+    }
+    nav ul li:hover > ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li id="home"><a href="#">Home</a></li>
+      <li id="about"><a href="#">About Us</a></li>
+      <ul>
+        <li id="company"><a href="#">The Company</a></li>
+        <li id="people"><a href="#">The People</a></li>
+        <ul>
+          <li id="emp"><a href="#">Employees</a></li>
+          <li id="management"><a href="#">Management</a></li>
+        
+          </ul> 
+      </ul>
+      <ul>
+            <li id="board"><a href="#">The Board</a></li>
+            <li id="history"><a href="#">Our History</a></li>
+            </ul>
+          
+      <li id="faq"><a href="#">FAQ</a></li>
+      <li id="careers"><a href="#">Careers</a></li>
+      <li id="contact"><a href="#">Contact Us</a></li>
+    </ul>
+
+
+  </nav>
+</body>
+</html>

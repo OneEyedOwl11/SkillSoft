@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ol {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 16pt;
+      list-style-type: upper-alpha;
+    }
+    ul {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16pt;
+      list-style-position: inside;
+      list-style-type: square;
+    }
+    li {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18pt;
+      list-style-image: url("filename.png");
+    }
+
+    /*ol, ul, li {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 16pt;
+      list-style-type: upper-roman; 
+      you can do this if you want to change multiple tags with the same parameters
+      */
+  </style>
+</head>
+<body>
+  <ul>
+    <li>CPU: Ryzen 5 3600</li>
+    <li>RAM: 16GB</li>
+    <li>OS: Windows 10</li>
+    <ul>
+      <li>CPU: Ryzen 5 3600</li>
+      <li>RAM: 16GB</li>
+      <li>OS: Windows 10</li>
+      <ul>
+        <li>CPU: Ryzen 5 3600</li>
+        <li>RAM: 16GB</li>
+        <li>OS: Windows 10</li>
+      </ul>
+    </ul>
+  </ul>
+  <ol type="i" start="5">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ol>
+</body>
+</html>
