@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #moveMe {
+        width: 155px;
+        height: 155px;
+        background-color: red;
+        position: relative;
+        animation: moveDIV 5s infinite;
+        -ms-animation: moveDIV 5s infinite;
+        -webkit-animation: moveDIV 5s infinite;
+      }
+      @keyframes moveDIV {
+        0% {
+          transform: rotate(0deg);
+          left: 0px;
+          top: 0px;
+          background-color: darkorange;
+        }
+        50% {
+          transform: rotate(90deg);
+          left: 150px;
+          top: 100px;
+          background-color: black;
+        }
+        100% {
+          transform: rotate(360deg);
+          left: 300px;
+          top: 300px;
+        }
+      }
+      @-webkit-keyframes moveDIV {
+        0% {
+          transform: rotate(0deg);
+          left: 0px;
+          top: 0px;
+          background-color: darkorange;
+        }
+        50% {
+          transform: rotate(90deg);
+          left: 150px;
+          top: 100px;
+          background-color: black;
+        }
+        100% {
+          transform: rotate(360deg);
+          left: 300px;
+          top: 300px;
+        }
+      }
+      @-ms-keyframes moveDIV {
+        0% {
+          transform: rotate(0deg);
+          left: 0px;
+          top: 0px;
+          background-color: darkorange;
+        }
+        50% {
+          transform: rotate(90deg);
+          left: 150px;
+          top: 100px;
+          background-color: black;
+        }
+        100% {
+          transform: rotate(360deg);
+          left: 300px;
+          top: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="moveMe"></div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(46, 210, 231);
+}
+
+#wrapper {
+  width: 1280px;
+  height: 900px;
+  margin: 0 auto;
+}
+
+#banner {
+  width: 1280px;
+  height: 100px;
+  background-color: orange;
+}
+
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+#menu {
+  width: 380px;
+  height: 700px;
+  background-color: red;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+}
+
+#content {
+  width: 900px;
+  height: 700px;
+  background-color: yellow;
+  float: left;
+}
+
+#footer {
+  width: 1280px;
+  height: 100px;
+  background-color: green;
+  float: left;
+}
+
+#pastals {
+  float: left;
+  padding: 0% 20px;
+}
+
+#paint {
+  float: left;
+  padding: 0% 20px;
+}
+
+#sculpture {
+  float: left;
+  padding: 0% 20px;
+}
+
+#nav2 {
+  float: left;
+  border: 1px solid black;
+}
