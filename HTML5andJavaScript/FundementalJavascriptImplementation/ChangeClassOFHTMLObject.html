@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function doIt(chClass) {
+        var addClass = chClass.value;
+        var object = document.getElementById("div1");
+        object.className = addClass;
+      }
+    </script>
+    <style>
+      .class1 {
+        width: 100px;
+        height: 100px;
+        color: #ffd800;
+        background-color: orange;
+      }
+      .class2 {
+        width: 100px;
+        height: 100px;
+        color: #ffd800;
+        background-color: black;
+      }
+      .class3 {
+        width: 100px;
+        height: 100px;
+        color: #ffd800;
+        background-color: #ff00ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">&lt;div&gt; "div1"</div>
+    <br />
+    <input type="button" onclick="doIt(this)" value="class1" />
+    <input type="button" onclick="doIt(this)" value="class2" />
+    <input type="button" onclick="doIt(this)" value="class3" />
+    <hr />
+    <span id="output"></span>
+  </body>
+</html>

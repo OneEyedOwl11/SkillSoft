@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        width: 450px;
+        height: 135px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      #div2 {
+        width: 450px;
+        height: 135px;
+        border: 1px solid black;
+        padding: 5px;
+      }
+      #div3 {
+        width: 400px;
+        height: 135px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      #dragText {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 10px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function drag(event) {
+        event.dataTransfer.setData("Text", event.target.id);
+      }
+      function drop(event) {
+        event.preventDefault();
+        var data = event.dataTransfer.getData("Text");
+        event.target.appendChild(document.getElementById(data));
+        x = event.target.id;
+        document.getElementById("output").innerHTML = x;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Drag a Paragraph into a box</p>
+    <div id="div1" ondrop="drop(event)" ondragover="drop(event)"></div>
+    <br />
+    <div id="div2" ondrop="drop(event)" ondragover="drop(event)"></div>
+    <br />
+    <div id="div3" ondrop="drop(event)" ondragover="drop(event)"></div>
+    <br />
+
+    Text:
+    <span id="dragText" draggable="true" ondragstart="drag(event)"
+      >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quasi
+      porro veritatis repudiandae deserunt. Cupiditate officia amet nemo
+      doloribus libero aut quam voluptas sapiente? Quasi odit minus suscipit
+      laudantium excepturi quaerat modi maxime velit, magnam ipsa nulla tenetur
+      magni voluptatem alias nobis? Beatae reprehenderit libero ex deleniti
+      facere velit quas sit voluptas esse cumque nulla aspernatur fuga enim
+      eveniet aperiam debitis deserunt, saepe quaerat? Voluptatibus, doloremque
+      enim recusandae impedit aliquam tempora provident voluptas repudiandae
+      sunt est odit, saepe, rerum repellendus dolorem quas sit illo nam sint
+      nemo harum accusamus aut adipisci sapiente possimus? Id non ex tempore,
+      hic cupiditate error.
+    </span>
+    <br />
+    Location: <span id="output"></span>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function doIt() {
+        document.getElementById("redBox").style.fontFamily = "Times New Roman";
+      }
+    </script>
+    <style>
+      #redBox {
+        font-family: Calibri;
+        font-size: 14pt;
+        color: yellow;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        text-align: center;
+        line-height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <p></p>
+    <div id="redBox" class="clickBox">ID = "redBox"</div>
+    <br /><br />
+    <input type="button" onclick="doIt()" value="GO" />
+  </body>
+</html>
