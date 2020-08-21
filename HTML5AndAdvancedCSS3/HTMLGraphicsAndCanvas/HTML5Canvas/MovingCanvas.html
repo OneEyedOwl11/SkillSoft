@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #myCanvas {
+        position: absolute;
+        transform: translate(100px, 100px);
+        -webkit-transform: translate(100px, 100px);
+        -ms-transform: translate(100px, 100px);
+        -moz-transform: translate(100px, 100px);
+      }
+    </style>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="400"
+      height="300"
+      style="background: yellow; border: 1px solid black;"
+    ></canvas>
+
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+      context.font = "50pt Calibri";
+      context.fillStyle = "blue";
+      context.beginPath();
+      context.rotate((Math.PI / 180) * 45);
+      context.fillText("Hello world!", 70, -10);
+    </script>
+  </body>
+</html>
