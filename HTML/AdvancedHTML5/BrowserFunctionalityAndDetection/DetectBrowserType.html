@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function doIt() {
+        outputTxt = "browser codename: " + navigator.appCodeName + "<br>";
+        outputTxt += "browser name: " + navigator.appName + "<br>";
+        outputTxt += "browser version: " + navigator.appVersion + "<br>";
+        outputTxt += "browser cookies: " + navigator.cookieEnabled + "<br>";
+        outputTxt += "browser language: " + navigator.language + "<br>";
+        outputTxt += "browser online: " + navigator.onLine + "<br>";
+        outputTxt += "browser platform: " + navigator.platform + "<br>";
+        outputTxt += "User-Agent header: " + navigator.userAgent + "<br>";
+
+        document.getElementById("output").innerHTML = outputTxt;
+      }
+    </script>
+  </head>
+  <body>
+    <span id="output"></span><br /><br />
+    <input type="button" value="Go" onclick="doIt()" />
+  </body>
+</html>

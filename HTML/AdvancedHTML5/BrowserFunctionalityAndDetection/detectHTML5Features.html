@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function doIt() {
+        var inputs = [
+          "search",
+          "number",
+          "range",
+          "color",
+          "tel",
+          "url",
+          "email",
+          "date",
+          "month",
+          "week",
+          "time",
+          "datetime",
+          "datetime-local",
+        ];
+        //creat input element
+        var inp = document.createElement("input");
+
+        for (i = 0; i < 13; i++) {
+          //set attribute
+          inp.setAttribute("type", inputs[i]);
+          //text returned if not supported
+          if (inp.type == "text") {
+            document.getElementsByClassName("output").innerHTML +=
+              "&lt;input type = '" + inputs[i] + "&gt;: NO" + "<br>";
+          } else {
+            document.getElementsByClassName("output").innerHTML +=
+              "&lt;input type = '" + inputs[i] + "&gt;: YES" + "<br>";
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button id="go" onclick="doIt()">GO</button><br /><br />
+    <strong>New HTML5 input types: </strong><br />
+    <div id="types">
+      search boxes <br />
+      SpinBoxes <br />
+      color pickers <br />
+      telephone numbers <br />
+      web addresses <br />
+      email addresses <br />
+      calendar date pickers <br />
+      months <br />
+      weeks <br />
+      timestamps <br />
+      precise dat+time stamps <br />
+      local dates and times <br />
+    </div>
+    <div id="output"></div>
+    <input type="color" />
+  </body>
+</html>
