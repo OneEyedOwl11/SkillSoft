@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var click = false;
+
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+
+      canvas.addEventListener(
+        "mousemove",
+        function (event) {
+          var rect = canvas.getBoundingClientRect();
+          x = Math.round((event.clientX - rect.left) * 100) / 100;
+          y = Math.round((event.clientY - rect.top) * 100) / 100;
+          makeMsg();
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          context.font = "14pt Calibri";
+          context.fillStyle = "black";
+          context.fillText(message, 10, canvas.height - 10);
+        },
+        false
+      );
+
+      canvas.addEventListener(
+        "mousedown",
+        function (event) {
+          click = true;
+          makeMsg();
+        },
+        false
+      );
+
+      canvas.addEventListener(
+        "mouseup",
+        function (event) {
+          click = true;
+          makeMsg();
+        },
+        false
+      );
+
+      function makeMsg() {}
+    </script>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="300"
+      height="200"
+      style="border: 1px solid black; background-color: pink;"
+    ></canvas>
+  </body>
+</html>
+
+<!--they did not show every piece of code here-->

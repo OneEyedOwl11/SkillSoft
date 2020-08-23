@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+        body{
+          margin: 5%;
+          padding: 5%;
+      }
+      #labSvg{
+          background-color: #eeeeee;
+          border: 1px solid green;
+          height: 200px;
+          width: 200px;
+      }
+    </script>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="labSvg">
+      <!--Define text path-->
+      <defs>
+        <path
+          id="txtPath"
+          d="M 60 150 110 130 180 150"
+          fill="none"
+          stroke="none"
+        />
+      </defs>
+
+      <!--Draw shapes and implement transforms-->
+      <circle
+        id="face"
+        cx="100"
+        cy="50"
+        r="40"
+        fill="yellow"
+        stroke="black"
+        stroke-width="2"
+      />
+      <ellipse cx="80" cy="35" rx="3" ry="9" stroke="black" fill="black" />
+      <g transform="translate(40,0)">
+        <ellipse cx="80" cy="35" rx="3" ry="9" stroke="black" fill="black" />
+      </g>
+      <g transform="translate(0,40)">
+        <g transform="rotate(180, 100, 50)">
+          <path
+            d="M 80 70 S 100 50 120 70"
+            stroke="black"
+            stroke-width="2"
+            fill="none"
+            ;
+          />
+        </g>
+      </g>
+      <text
+        fill="black"
+        stroke="yellow"
+        stroke-width="2"
+        font-size="32"
+        font-family="Verdana"
+        font-weight="normal"
+      >
+        <textPath xlink:href="#txtPath">
+          Smile!
+        </textPath>
+      </text>
+    </svg>
+  </body>
+</html>

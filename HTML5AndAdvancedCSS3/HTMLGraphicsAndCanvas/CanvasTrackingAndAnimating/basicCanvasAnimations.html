@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="300"
+      height="200"
+      style="border: 1px solid black; background-color: pink;"
+    ></canvas>
+    <br /><br />
+    <input type="button" value="GO" onclick="box1()" />
+    <script type="text/javascript">
+      function box1() {
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        var myRectangle = {
+          x: 0,
+          y: 75,
+          width: 50,
+          height: 50,
+          borderWidth: 2,
+        };
+        var newX = 0;
+
+        drawRectangle(myRectangle, context);
+        var sequence = setInterval(update, 1);
+
+        function update() {
+          if (
+            newX + 1 >=
+            canvas.width - myRectangle.width - myRectangle.borderWidth / 2
+          ) {
+            clearRectangle(myRectangle, context);
+            newX = 0;
+            drawRectangle(myRectangle, context);
+            clearInterval(sequence);
+          } else {
+            newX += 1;
+            myRectangle.x = newX;
+            clearRectangle(myRectangle, context);
+            drawRectangle(myRectangle, context);
+          }
+        }
+
+        function drawRectangle(myRectangle, context) {
+          context.beginPath();
+          context.rect(
+            myRectangle.x,
+            myRectangle.y,
+            myRectangle.width,
+            myRectangle.height
+          );
+          context.fillStyle = "#ff0000";
+          context.fill();
+          context.lineWidth = myRectangle.borderWidth;
+          context.strokeStyle = "black";
+          context.stroke();
+        }
+        function clearRectangle(myRectangle, context) {
+          context.clearRect(
+            myRectangle.x - 5,
+            myRectangle.y - 5,
+            myRectangle.width + 10,
+            myRectangle.height + 10
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

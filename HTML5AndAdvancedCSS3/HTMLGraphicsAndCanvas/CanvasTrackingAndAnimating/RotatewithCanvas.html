@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="450"
+      height="450"
+      style="border: 1px solid black;"
+    ></canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+      context.font = "50px Calibri";
+
+      context.fillStyle = "blue";
+      context.-webkit-rotate((Math.PI / 180) * 90);
+      context.fillText("Hello world", 80, 80);
+
+      context.fillStyle = "red";
+      context.-webkit-rotate((Math.PI / 180) * 90);
+      context.fillText("hello world", 50, 80);
+    </script>
+  </body>
+</html>

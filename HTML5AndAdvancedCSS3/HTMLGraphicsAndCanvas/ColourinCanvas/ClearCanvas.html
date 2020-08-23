@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function doIt() {
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+      }
+    </script>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="400"
+      height="300"
+      style="border: 1px solid black;"
+    ></canvas
+    ><br /><br />
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+      context.font = "50pt Calibri";
+      context.fillStyle = "blue";
+      context.beginPath();
+      context.fillText("hello world", 30, 150);
+    </script>
+    <input type="button" value="CLEAR" onclick="doIt()" />
+  </body>
+</html>
