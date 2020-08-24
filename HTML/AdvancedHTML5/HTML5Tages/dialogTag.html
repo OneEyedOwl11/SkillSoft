@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function showIt() {
+        document.getElementById("notify").style.display = "block";
+      }
+      function hideIt() {
+        document.getElementById("notify").style.display = "none";
+      }
+    </script>
+    <style>
+      #notify {
+        display: none;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: bold;
+        background-color: #ffd800;
+        text-align: center;
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <dialog id="notify"
+      >Lorem ipsum dolor sit amet! <br /><br />
+      <button id="exit" onclick="hideIt()">Exit</button>
+    </dialog>
+    <br /><br />
+    <button id="show" onclick="showIt()">Show</button>
+  </body>
+</html>

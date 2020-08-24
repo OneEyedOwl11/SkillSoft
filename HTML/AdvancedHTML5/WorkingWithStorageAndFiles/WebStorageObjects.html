@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function doIt() {
+        var result = "";
+        localStorage.setItem("company1", "skillsoft");
+        result = localStorage.getItem("company1");
+        document.getElementById("output").innerHTML = result;
+      }
+    </script>
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="doIt()" id="go">Go</button><br /><br />
+    <span id="output"></span>
+  </body>
+</html>

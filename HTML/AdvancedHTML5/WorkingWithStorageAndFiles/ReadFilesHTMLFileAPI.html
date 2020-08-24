@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="file" id="files" multiple /> <br /><br />
+    <span id="list"></span>
+
+    <script>
+      document
+        .getElementById("files")
+        .addEventListener("change", fileSelect, false);
+
+      function fileSelect(evt) {
+        var upped = evt.target.files; //fileListObject
+        //List properties
+        var output = "";
+        for (var i = 0; i <= upped.length; i++) {
+          output =
+            upped[i].name +
+            " (" +
+            upped[i].type +
+            ") <br>" +
+            upped[i].size +
+            " bytes <br>" +
+            "last modified: " +
+            upped[i].lastModifiedDate;
+
+          document.getElementById("list").innerHTML += output + "<br><br>";
+        }
+      }
+    </script>
+  </body>
+</html>

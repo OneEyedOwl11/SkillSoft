@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function doIt() {
+        if (window.File) {
+          document.getElementById("output").innerHTML = "Supported<br>";
+        } else {
+          document.getElementById("output").innerHTML = "not Supported <br>";
+        }
+        if (window.FileList) {
+          document.getElementById("output").innerHTML += "Supported<br>";
+        } else {
+          document.getElementById("output").innerHTML += "not Supported <br>";
+        }
+        if (window.FileReader) {
+          document.getElementById("output").innerHTML += "Supported<br>";
+        } else {
+          document.getElementById("output").innerHTML += "not Supported <br>";
+        }
+        if (window.Blob) {
+          document.getElementById("output").innerHTML += "Supported<br>";
+        } else {
+          document.getElementById("output").innerHTML += "not Supported <br>";
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #types {
+        float: left;
+        padding-right: 10px;
+      }
+      #output {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="go" onclick="doIt()">GO</button><br /><br />
+    <strong>HTML5 File API Objects:</strong><br />
+    <div id="types">
+      File: <br />
+      Filereader: <br />
+      Filelist: <br />
+      Blob: <br />
+    </div>
+    <div id="output"></div>
+  </body>
+</html>
