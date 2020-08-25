@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function doIt() {
+        var elem = document.forms[0];
+        elem[3].value = "555-555-5555";
+        elem[4].type = "submit";
+        elem[4].value = "submit";
+      }
+    </script>
+  </head>
+  <body>
+    <form name="form1">
+      Name: <input type="text" id="name" /><br /><br />
+      Address:<input type="text" id="name" /><br /><br />
+      Email: <input type="text" id="name" /><br /><br />
+      Phone: <input type="text" id="name" /><br /><br />
+      <input type="button" value="Go" onclick="doIt()" />
+      <span id="output"></span>
+    </form>
+  </body>
+</html>

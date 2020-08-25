@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function doIt() {
+        var newDiv = document.createElement("div");
+        newDiv.innerHTML = "this is a div";
+        newDiv.className = "class1";
+        document.body.appendChild(newDiv);
+
+        var btn = document.createElement("button");
+        btn.innerHTML = "click";
+        document.body.appendChild(document.createElement("br"));
+        document.body.appendChild(btn);
+      }
+    </script>
+    <style>
+      .class1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12px;
+        font-color: black;
+        width: 200px;
+        height: 75px;
+        background-color: #ff6a00;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" value="Go" onclick="doIt()" /><br /><br />
+  </body>
+</html>

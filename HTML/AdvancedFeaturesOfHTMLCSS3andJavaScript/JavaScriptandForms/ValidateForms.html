@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function chkInput() {
+        var x;
+        var numInp = document.getElementById("num1").value;
+
+        var validNums = /[0-9.]/;
+        if (numInp.match(validNums)) {
+          x = true;
+          document.getElementById("output").innerHTML = "thank you";
+          return x;
+        } else {
+          x = false;
+          alert("please enter numbers only");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Please Enter a Number: <br />
+    <form action="#" name="myForm" onsubmit="return false">
+      <input type="text" id="num1" name="num1" />
+      <input
+        type="submit"
+        value="Submit Now"
+        onclick="chkInput()"
+      /><br /><br />
+      <span id="output"></span>
+    </form>
+  </body>
+</html>

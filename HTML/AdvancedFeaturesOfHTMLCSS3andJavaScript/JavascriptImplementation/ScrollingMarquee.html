@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #marquee {
+        width: 700px;
+        height: 20px;
+        border: 1px solid black;
+        padding-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="marquee"></div>
+    <br />
+    <script>
+      i = 0;
+      myText =
+        "Welcome to our site! this week only - 25% off on all storage devices, check out our storage section";
+
+      var sequence = setInterval(update, 100);
+
+      function update() {
+        i++;
+        if (i > myText.length) {
+          i = 0;
+        }
+        marqueeText = myText.substring(i, myText.length);
+        marqueeText += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        marqueeText += myText.substring(0, i);
+        document.getElementById("marquee").innerHTML = marqueeText;
+      }
+    </script>
+  </body>
+</html>
