@@ -1,0 +1,27 @@
+NEW 
+<audio>
+>>Controls
+>>Source 
+>>Type 
+
+<video>
+Similar to audio
+
+<bdi>
+isolates part of the taxt that is formatted to display in the opposite directions 
+
+<aside>
+>>sidebare
+
+<article>
+>>used to create content that can stand on it's own
+
+<details>
+>describe details of a document
+
+<section>
+
+sections a part of the doc in your page 
+
+<time>
+time,date,both 

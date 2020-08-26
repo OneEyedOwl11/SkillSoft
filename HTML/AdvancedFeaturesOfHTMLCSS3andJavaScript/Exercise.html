@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="formval.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div>
+      <form
+        name="testform"
+        action="myform.php"
+        method="get"
+        onsubmit="return formCheck()"
+      >
+        User Name:
+        <input type="text" name="username" value="" id="un" maxlength="6" />
+        <br />
+        <span id="nameEmpty" class="errorRep"
+          >Name field must not be empty</span
+        >
+        <br />
+        <span id="nameNotAlpha" class="errorRep"
+          >Name field must contain only alphanumeric characters</span
+        >
+        <br />
+        Password: <input type="password" name="pswrd" id="pswr" /> <br />
+        <span id="pswdEmpty" class="errorRep"
+          >Password field must not be empty</span
+        >
+        <br />
+        <span id="pswdInvalid" class="errorRep">Incorrect password</span> <br />
+        User ID#:
+        <input
+          type="number"
+          min="1000"
+          max="2000"
+          name="userid"
+          value=""
+          id="ui"
+        />
+        <br />
+        <span id="idEmpty" class="errorRep">ID field must not be empty</span
+        ><br />
+        <span id="idNotNumber" class="errorRep"
+          >ID field must contain only numbers</span
+        ><br />
+        <span id="idLimits" class="errorRep"
+          >ID field must contain number between 100 and 250</span
+        ><br />
+        Please choose your preferred garage:<br />
+        <input type="radio" name="garage" value="ABC Garage" />ABC Garage<br />
+        <input type="radio" name="garage" value="Top Notch Auto Shop" />Top
+        Notch Auto Shop<br />
+        <input type="radio" name="garage" value="XYZ Auto Center" />XYZ Auto
+        Center<br />
+        <span id="grgEmpty" class="errorRep">You must select a garage</span
+        ><br />
+        <input type="submit" value="Submit" /> <br />
+      </form>
+      <p></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function update() {
+        var val = document.getElementById("range1").value;
+        document.getElementById("output").innerHTML = val;
+        document.getElementById("meter2").value = val;
+      }
+    </script>
+  </head>
+  <body>
+    <meter id="meter2" value="50" min="0" max="100" style="width: 300px"></meter
+    ><br />
+    <input
+      type="range"
+      id="range1"
+      value="0"
+      min="0"
+      max="100"
+      onchange="update()"
+    />
+    <span id="output"></span>
+  </body>
+</html>

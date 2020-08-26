@@ -1,0 +1,26 @@
+new version of html 
+features html,DOM, Javascript, CSS 
+compatible
+reduce need for scripts 
+handle doc errors
+javascript api'scripts
+additional tags
+additional markups
+
+header 
+>>Logo and title
+section
+>>Themetic
+>>Group Content
+
+Footer
+>>used to put things at the end of the document
+
+Nav 
+>>>>collection of navigational links 
+
+article 
+>>Standalone piece of Content
+
+Aside 
+>>wrap a portion of content that is standalone

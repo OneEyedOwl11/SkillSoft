@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function go() {
+        var inc = 0;
+        var doIt = setInterval(updateProgress, 50);
+        function updateProgress() {
+          inc++;
+          if (inc > 100) {
+            document.getElementById("output").innerHTML = "done!";
+          } else {
+            document.getElementById("output").innerHTML = inc + "%";
+            document.getElementById("progress1").value = inc;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <progress
+      id="progress1"
+      value="0"
+      min="0"
+      max="100"
+      style="width: 300px"
+    ></progress
+    ><br />
+    <span id="output"></span><br /><br />
+    <button id="go" onclick="go()">Go</button>
+  </body>
+</html>

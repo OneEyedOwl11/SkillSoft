@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #myDiv {
+        width: 200px;
+        background-color: grey;
+        border: 3px solid black;
+        height: 200px;
+        padding: 3px;
+      }
+    </style>
+    <script>
+      window.onload = function () {
+        document
+          .getElementById("myDiv")
+          .addEventListener("click", processClick, false);
+      };
+      function processClick(event) {
+        //console.log(event);
+        var output = "";
+        output += event.timeStamp;
+        output += " X: " + event.pageX;
+        output += " Y: " + event.pageY;
+        document.getElementById("eventInfo").innerHTML = "TimeStamp: " + output;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="myDiv">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto et sed
+        quos incidunt aliquid distinctio minus autem. Sunt aliquid, aut cum eum
+        maiores at voluptatum nam quasi mollitia excepturi iste, saepe libero
+        itaque rerum debitis ad animi doloribus impedit iure.
+      </p>
+    </div>
+    <div id="eventInfo"></div>
+  </body>
+</html>

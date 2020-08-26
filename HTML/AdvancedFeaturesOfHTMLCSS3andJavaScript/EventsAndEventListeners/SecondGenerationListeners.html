@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        var theBtn = document.getElementById("press");
+        var scndBtn = document.getElementById("push");
+        theBtn.addEventListener("click", greetUser, false);
+        scndBtn.addEventListener("click", greetUser, false);
+      };
+      function greetUser(event) {
+        var callerId = event.target.id;
+        //alert("hello user");
+        alert("this event was called by: " + callerId);
+      }
+    </script>
+  </head>
+  <body>
+    <button id="press">Press Me</button>
+    <button id="push">Push me</button>
+  </body>
+</html>

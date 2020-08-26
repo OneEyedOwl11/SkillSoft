@@ -1,0 +1,38 @@
+article 
+>>recognizes an article
+
+aside 
+>>recognizes content other than page content
+
+details
+>>recognizes additional detail the user can view or hide 
+
+figcaption
+>> recognizes caption for the <figure> element 
+
+figure
+>>self-contained content
+
+footer 
+>> recognizes footer for section or document
+
+header 
+>>recognizes header for section or document
+
+main 
+>>recognizes main content for the specified document
+
+mark 
+>>highlight 
+
+nav 
+>> navigation link 
+
+section 
+>>section in document
+
+summary
+>> Heading for the details tag 
+
+time 
+<recognizes time and date>

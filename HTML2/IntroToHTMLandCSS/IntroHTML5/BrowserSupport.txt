@@ -1,0 +1,11 @@
+basically every browser 
+
+web apps 
+>>local storage 
+>>session Storage 
+>>post message
+>>hash change (event)
+>>offline apps
+>>workers
+>>query selector
+>>geolocation

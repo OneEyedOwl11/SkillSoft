@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function clickDiv(box) {
+        alert(box.id);
+      }
+      function dblClick() {
+        alert("You double-clicked");
+      }
+      function submit(file) {
+        alert(file);
+      }
+    </script>
+    <style>
+      #div1 {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1" onclick="clickDiv(this)"></div>
+    <br /><br />
+    <button ondblclick="dblClick()">Double-Click Me</button>
+    <br /><br />
+    <input type="file" onchange="submit(this)" />
+  </body>
+</html>
