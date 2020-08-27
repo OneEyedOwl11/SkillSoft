@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function (e) {
+        var paragraphs = document.getElementsByTagName("p");
+        console.log(paragraphs[0].innerHTML);
+
+        var var1 = 3;
+        var var2 = 4;
+
+        var1 += 7;
+        console.log("var1: ", var1);
+
+        console.log(var1 != 10);
+        console.log(Math.sqrt(var1));
+        console.log("ciel: ", Math.ceil(Math.sqrt(var1)));
+
+        if (var1 == 6) {
+          console.log("if statement true");
+        } else if (var1 == 10) {
+          console.log("if is false elseif");
+        } else {
+          console.log("None are true");
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sed.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+Unordered lists of data types 
+can also be reference data types 
+Stored in a series of name-value pairs 
+can be strings or numbers
+each item in the series is called a property or a method
+var Employee = {department:Planning", firstName:"Bob", lastName:"Smith"};
+Reference data types value is stored as a reference wjile primitive data types are stored directly
+object data properties have attributes which make up the series
+
+Common ways to create objects
+>object literals
+                e.g. 
+                var car = {
+                    color: "red",
+                    model: "accord",
+                    make "honda",
+                }
+Object onstructor
+>used for initializing new objects E.g.
+                var car = new object();
+                car.color = "red";
+                car.model: "accord";
+                car.make "honda";
+
+Methods
+actions performed on objects
+Stored in properties as functional definitions in JS 
+objectName.methodName()
+    name = Employee.fullName will just call the function and not execute it you need to insert the () for it to actually run the function
+
+definition stored as value
+Built-in Methods
+
+adding Methods are done inside the constructor function

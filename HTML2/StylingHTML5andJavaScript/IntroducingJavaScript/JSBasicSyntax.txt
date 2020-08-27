@@ -1,0 +1,60 @@
+Set of rules that determine how javascript programs are created
+list of processes executed by the computer and be refered to as statements
+statements are separated by semi-colons ;;;;;;;;;
+variables are declared using        var 
+                                    e.g. var a, b, c;
+                                    a = 10;
+                                    b = 8;
+                                    c =89;
+
+parenthesis indicate the precedence in the statements
+statements are normally composed of the following
+>comments
+>expressions
+>Keywords
+>operators
+>values 
+
+JS syntax defines two types of values
+>Fixed Values 
+>>can be referred to as javascript literal
+>> Numbers are coded with or without decimals
+>> Strings use double or single quotes
+
+>variable values
+>>referred to as variables
+
+variables
+>>Used to provision data values
+>>uses var keyword to define variables
+var a;
+a = 100 + 10;
+
+types of variables
+>operators
+>>arithmatic like -.+,*,/ to compute 
+>>assignment operators (=) used to assign values to variable;
+
+>expressions
+>>combination of operators which compute to value 
+>> can also contain variable value
+>identifiers
+>>Used to name the variables among other syntax
+>>must be either 
+>>>Upper camel Case =   FirstName
+>>>Lower Camel Case =   firstName 
+>>>Underscore =         first_name
+
+Arrays
+Variable that can contain multiple values.
+ability to loop through items searching for a specific one 
+e.g.
+var vehicles = ["honda", "suzuki", "mazda"];
+processed by index number (the first item is 0 and second is 1 so if you have 4 items in your array you'd use 0-3 to find an item)
+spaces and line breaks are not necessary but best practice when troubleshooting debugging code issues
+e.g.
+var vehicles = [
+    "Honda",
+    "Mazda",
+    "Subaru"
+];

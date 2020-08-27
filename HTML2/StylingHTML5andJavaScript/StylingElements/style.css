@@ -1,0 +1,14 @@
+section {
+  font-weight: lighter;
+  color: navy;
+}
+h2 {
+  color: red;
+}
+p {
+  color: green;
+}
+
+p {
+  color: purple !important;
+}

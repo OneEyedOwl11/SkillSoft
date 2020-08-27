@@ -1,0 +1,26 @@
+Can function offline
+create good user interfaces
+Supported on most browsers
+can be used to provide warings
+DOM scripting
+>>form of implementation providing further interaction
+
+<noscript> 
+can be useful if users are required to disable scripts in their browsers
+Users may not have client side scripts Supported
+<noscript> Sorry your browser doesn't support js</noscript>
+
+<script></script>
+is the most common tag used to implement js and document can be used to direct to an external JS SRC 
+
+<script>
+document.getElementById("my.Demo").innerHTML = "Hello Skillsoft";
+</script>
+
+can change 
+styles
+content 
+attributes
+<script>
+defines client side script 
+

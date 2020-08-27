@@ -1,0 +1,55 @@
+Text values are referred to as strings
+numbers are codes without quotes and strings are coded with quotes 
+e.g.
+var model_number = 1000;
+var citizen = "Bob Smith";
+data types are dynamic
+
+strings
+>series of characters 
+>storing and manipulating Text
+>can be objects
+
+numbers
+>used with or without decimals
+
+Booleans
+>either true or false 
+
+arrays 
+>written within square brackets []
+
+objects
+>written within curly braces {}
+
+arithmatic operators
+>used to manipulate numbers
+
+assignment operators
+>assign values to JS variables
+
+string operators
+>used to manipulate strings
+
+Comparison operators
+>used in logical statements
+>can determine equality and difference between variables
+
+logical operators
+>used to determine logic between both variables and values
+
+typeof operator
+>searches the type of a JS variable 
+
+Ways that various items can be accessed
+>variables
+>objects
+>functions
+
+Local variables 
+>these are declared inside JS functions
+>>Carry a local scope can only be referenced in that function
+
+Global variables
+>global variables are declared outside the function
+>>carry a global scope can be referenced anywhere 

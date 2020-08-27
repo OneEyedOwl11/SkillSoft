@@ -1,0 +1,10 @@
+Transform element translate = move an object along x and y axis rotate = rotate
+an object skew you also need to use vendor prefixes for some functions e.g:
+-moz-transform: rotate(90deg); //this would work for mozilla visibility
+visibility: hidden; // this will hide an element but it will still take it's
+space on the document opacity set transparency display can make it so the
+element is not displayed on the page and there is no empty space left behind
+like with visibility no user interaction when it is set to none you can still
+manipulate it positioning position >>allows interaction while not affecting
+layout of the page eg position: absolute; clip-path not fully supported and used
+clip-path: polygon(0px, 0px, 0px, 0px, 0px, 0px, 0px, 0px,);
