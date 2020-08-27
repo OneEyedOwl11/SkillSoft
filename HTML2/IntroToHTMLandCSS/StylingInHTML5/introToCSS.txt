@@ -1,0 +1,5 @@
+adds styling to html 
+simplifies look and feel of html 
+increase productivity
+consistant code
+reduce errors

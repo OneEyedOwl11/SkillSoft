@@ -1,0 +1,26 @@
+section = cut off section of content in a doc that can stand alone by itself
+article = separate piece of content that can stand alone
+header = top part of the document usually contains site logo and nav bar 
+footer = end of the document usually contains details about the page and copyrights
+aside = separate from the document usually contains links 
+
+3 new elements
+video 
+audio 
+header
+
+3 deprecated
+bgsound
+font 
+frameset
+
+
+elements of box model 
+content
+>>where the actual content goes into 
+padding
+>> space before it touches the border
+border 
+>> physical end of the box
+margin
+>> the space between the box and other elements around it

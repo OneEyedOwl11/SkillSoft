@@ -1,0 +1,15 @@
+Each Html element can be considered a box 
+the box model is associated to design and layout
+the model can be considered a box itself
+>>wraps around each element
+>>margin
+>>border
+>>padding
+>>content 
+
+allows us to define space and borders 
+total width of your box would be
+>> width+left padding+ right padding+ left border+ right border + left margin + right margin;
+
+same for height but change to suite it 
+
