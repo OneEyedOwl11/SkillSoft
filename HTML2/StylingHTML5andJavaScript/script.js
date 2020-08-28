@@ -1,9 +1,27 @@
 window.onload = function (e) {
-  var carChoice = "";
-  var carsForSale = ["Honda", "Mazda", "Suzuki"];
-
-  for (i = 0; i < carsForSale; i++) {
-    carChoice = carsForSale[i];
-    document.getElementById("output").innerHTML = carChoice;
+  var senior = 5;
+  var age = 31;
+  if (age < 30) {
+    senior += 1;
+  } else if (age > 50) {
+    senior += 5;
   }
+
+  var person = {
+    firstName: "Bob",
+    lastName: "smith",
+    seniority: senior,
+  };
+
+  console.log(person);
+  //var this = that + somethingElse;
+  //var that = 2;
+  //var somethingElse = 22;
+  //var employee = {
+  //department: "Shhipping",
+  //name: "Bob"
+  //}
+
+  // object.method()
+  //var name employee.firstName()
 };
