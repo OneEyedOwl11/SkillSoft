@@ -1,0 +1,41 @@
+HTML input attributes
+DOM properties and methods
+CSS psuedo selectors
+
+forms of constraint validation HTML input attributes:
+>min 
+>Max 
+>disable 
+>required 
+>pattern
+>type 
+
+Input attributes
+Autocomplete
+>defines whether or not the input field will allow for Autocompletion
+>can be scope of the field or the entire form 
+>specic to form element
+
+disabled 
+>attribute used to define the input to be disabled
+>the user cannot click or manipulate the field
+
+form
+>attribute that defines one or more forms belonging to the <input> element 
+
+maxlength
+>defines the maximum length for the input field 
+
+novalidate
+>is a form attribute
+>foes not take value of the input specified
+>specic to form element
+
+size 
+> defines the size of the input field in character format 
+
+value 
+>usef to define the value of the specified attribute
+
+readonly
+>used to define the readonly attribute, which can be used to create a readonly value 

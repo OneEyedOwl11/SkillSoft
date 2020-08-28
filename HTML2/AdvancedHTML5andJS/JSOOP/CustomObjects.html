@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function someObject(parameter) {
+        this.propertyOne = parameter;
+        this.propertyTwo = "a second property";
+      }
+
+      someObject.prototype.printPropOne = function () {
+        console.log(this.propertyOne);
+      };
+      someObject.prototype.printPropTwo = function () {
+        console.log(this.propertyTwo);
+      };
+
+      var myObject = new someObject("hello world!");
+      console.log(myObject);
+
+      myObject.printPropOne();
+      myObject.printPropTwo();
+    </script>
+  </head>
+  <body></body>
+</html>

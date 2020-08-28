@@ -1,0 +1,45 @@
+>designed from a simple object-based system 
+OOP principles refer to using self-contained snippets of code to develop an application.
+>>normally referred to as objects and classes in most object-oriented languages
+>>>object can be looked at as a collection of properties 
+>>>property has an association between a name and a value 
+---value of a property can also be a function - this process is normally referred to as a method
+
+building applications with objects can save time and allow the usability of the piece of code to be applied to other areas 
+
+create and manage objects to encapsulate related functions
+
+
+Object 
+>property 
+>>function, either an attribute or a state 
+>method
+>>a process with a function and procedure 
+
+functions are normally considered the constructor of the object
+defining a class 
+eg
+function employee () {
+
+}
+
+inheritance
+>is an object able to inherit the methods and properties fron the parent object
+>an instance is a copy of the object that inherits the same properties
+>classical inheritance
+>prototypal inheritance
+
+encapsulation 
+>refers to an object enclosing alll functionalities within the main object 
+>>objects, methods, and properties are within the object itself and hidden from the rest of the application
+>concept that the data of an object should not be directly exposed
+
+OOP is a cleaner and more effective way to reuse code
+natural and intuitive way of observing and managing software
+OOp uses inheritance to derive new instances of objects from the class 
+JavaScript does not use classes; intead it uses functions 
+all objects are considered as a descendant of the object class, which limits the scope, making it easier to manage
+>>allows building of an application with reusable code 
+Custom objects 
+>>Static members only exist in the scope of the object class 
+>>Private and Privileged members

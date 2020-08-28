@@ -1,0 +1,23 @@
+Css Flexbox
+>>provides a more stable and predictable behaiviour for page layouts 
+>> not conpatible with IE10 or earlier
+
+CSS float property
+>stable
+>>is more focused with the scope of document flow 
+
+CSS framework 
+>>Can be used to create layouts quickly
+>>bootstrap 
+>foundation
+
+html tables 
+>>can be used to create tabular formats 
+>> difficult to maintain site 
+
+
+Some browsers do not fully understand html5 and renders in a limbo state 
+may not be compatible entirely depending on the browser and version
+HTML5 is still under development and changes will occur frequently 
+
+There are various ways to create multi-column style layouts and each process has it's strength and weaknesses

@@ -1,0 +1,17 @@
+Executed when a form is submitted
+numeric values can be validated
+
+the process is performed automatically
+server-side validation 
+>is performed by the web server after the input has been sent to the server 
+
+client-side validation
+>type of varlidation from a web browser and occurs before the information is sent to the web server
+
+Validation is to ensure the user has performed the required inputs before submitting a form
+> ensure the user input is correct while entering the desired information
+
+Common validation can be performed for vaeious reasons
+>check whether or not the user has entered all the required fields 
+>check whether or not the user has entered a specific field - date, for example
+>check whether or not the user has entered in the propper type of information

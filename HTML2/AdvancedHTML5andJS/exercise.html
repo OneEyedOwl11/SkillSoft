@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      /*function numbers(storage, add) {
+        this.storage = storage;
+        this.add = document.getElementById("iNumber");
+      }
+
+      numbers.prototype = {
+        constructor: numbers,
+        addSum: function () {
+          console.log(storage + add);
+        },
+      };
+      var sum1 = new numbers(5);
+      console.log(sum1);
+      document.getElementById("output").innerHTML = sum1.addSum();
+      */
+
+      var a = "";
+
+      function addStuff() {
+        var b = document.getElementById("iNumber").value;
+        a = a + b;
+      }
+
+      document.getElementById("output").innerHTML = a;
+    </script>
+  </head>
+  <body>
+    <input type="number" value="6" id="iNumber" />
+    <span id="output"></span>
+  </body>
+</html>

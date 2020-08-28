@@ -1,0 +1,59 @@
+canvas defined.
+>html5 <canvas> purpose is to draw graphics on a webpage using javascript
+>while the <canvas> element is only the container while javascript is used to implement the graphics
+use <canvas> to create several various methods
+>boxes 
+>circles 
+>text 
+>images 
+
+Eg 
+<canvas
+id="myCanvasExample"
+width="300"
+height="200"
+style="border: 3px solid black;"></canvas>
+
+SVG
+>scalable vector graphics
+>used to define  graphics for a web design
+>provides various means of drawing images
+>>graphics
+>>text
+>>boxes
+>>circles
+>>path 
+
+Eg
+<svg width="500" height="500">
+<rectangle width="500" height="200" style="fill: rgb(0,20,210);
+stroke-width: 20; stroke: rgb(0,0,0)"/>
+</svg>
+
+canvas draws 2d
+svg can be considered a language describing 2d graphics in xml markup 
+
+svg draws 2d graphics using javascript on the fly 
+canvas gets rendered in real time right away and will be forgotten by the specified browser 
+>pixel by pixel process 
+>if the position is required to be changed in any way, the objects will be required to be redrawn - this includes any objects covered by the graphic object 
+
+SVG gets rendered with XML and every element will be available within the scope of the svg DOM 
+>ability to attach JS event handlers for an element
+>each shape that is drawn will be remembered as an object within the scope 
+>>if any ability is changed or updated, the browser will adapt and re-render the shape
+
+Comparison
+Canvas
+>Save files using .png or .jpg
+>dependant on resolution
+>friendly with graphic intensive gaming software
+>does not support event handlers 
+>poor text rendering capabilities
+
+SVG
+supports event handlers
+independant with regard to resolution
+is slower to common standards especially DOM intensive ones 
+friendly towards apps that use large rendering areas  EG google maps 
+not friendly with gaming software
