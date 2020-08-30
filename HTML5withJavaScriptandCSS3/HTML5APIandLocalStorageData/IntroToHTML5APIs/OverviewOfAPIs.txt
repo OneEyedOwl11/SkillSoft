@@ -1,0 +1,18 @@
+Selection - The selection API supports selecting items in DOM 
+(supports css3 type of selectors) to be used along with JQUERY
+
+Geolocation - This API is used to provide web applications with scripted access to geographical
+ location information of the hosting device
+
+Offline Apps - This API allows marking pages to be available in Offline mode.
+This is useful if a recource requires dynamic processing
+
+Media Capture - This API is used to facilitate user access to a device's 
+media capture mechanisms (camera, microphone, file upload control, etc.).
+This only covers a subset of media capture functionality of the web platform.
+
+Web Storage - This Specification defines an API for persistant data storage of key-value pair
+ data in Web clients
+
+Drag and Drop - This API is used to allow a user to drag and drop functions to DOM 
+elements, such as drag a file to be uploaded

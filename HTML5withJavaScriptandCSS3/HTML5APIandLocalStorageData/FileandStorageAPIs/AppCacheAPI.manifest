@@ -1,0 +1,10 @@
+CACHE MANIFEST
+#VERSION 2.2
+CACHE:
+AppCacheAPI.html
+
+NETWORK:
+*
+
+FALLBACK:
+https://media2.giphy.com/media/5wG597QP1fjG7xIfte/giphy.gif 01_maelstrom.png

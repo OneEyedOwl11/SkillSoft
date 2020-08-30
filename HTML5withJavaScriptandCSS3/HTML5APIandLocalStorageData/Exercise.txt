@@ -1,0 +1,7 @@
+Geolocation can be called and the results can be stored in a in a variable which can be outputted in
+a container on the HTML doc 
+
+Web storage api retains data through sessions by storing the values you decide to save on the browser 
+
+AppCache API stores the values that you make the browser retain by sprcifying it on the manifest file 
+so these files can be accessed even if you're offline as they will be stored on the local machine

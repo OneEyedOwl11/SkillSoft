@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h4>HTML Geolocation Latitude and Longitude Value</h4>
+    <p>
+      Example showing Geolocation , It will give values for the latitude and
+      longitude after clicking below button
+    </p>
+    <button onclick="getLocation()">Click Here</button>
+    <p id="geolocation"></p>
+    <script>
+      var x = document.getElementById("geolocation");
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showgeolocPosition);
+        } else {
+          x.innerHTML =
+            "This code is not supported in geolocation for your browser";
+        }
+      }
+      function showgeolocPosition(position) {
+        x.innerHTML =
+          "Latitude Attribute Value: " +
+          position.coords.latitude +
+          "<br>Longitude Attribute Value: " +
+          position.coords.longitude;
+      }
+    </script>
+  </body>
+</html>

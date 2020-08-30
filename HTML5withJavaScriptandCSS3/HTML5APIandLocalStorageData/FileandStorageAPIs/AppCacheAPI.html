@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" manifest="AppCacheAPI.manifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.addEventListener("load", function () {
+        document.getElementsByTagName("h1")[0].innerHTML = "Hello World";
+      });
+
+      var appCache = window.applicationCache;
+      appCache.addEventListener("error", function () {
+        alert("cache failed to update");
+        document.getElementById("output").innerHTML +=
+          "<li> a cache error has occurred</li>";
+      });
+      appCache.addEventListener("updateready", function () {
+        var refresh = confirm(
+          "an update version is ready. Press ok to refresh browser"
+        );
+        if (refresh) {
+          location.reload();
+        }
+        document.getElementById("output").innerHTML +=
+          "<li>cache ready to be updated</li>";
+      });
+      appCache.addEventListener("cached", function () {
+        document.getElementById("output").innerHTML +=
+          "<li>Application is cached</li>";
+      });
+      appCache.addEventListener("checking", function () {
+        document.getElementById("output").innerHTML +=
+          "<li>Checking cache</li>";
+      });
+      appCache.addEventListener("downloading", function () {
+        document.getElementById("output").innerHTML +=
+          "<li>cache is downloading</li>";
+      });
+      appCache.addEventListener("noupdate", function () {
+        document.getElementById("output").innerHTML +=
+          "<li>no cache update</li>";
+      });
+      appCache.addEventListener("obsolete", function () {
+        document.getElementById("output").innerHTML +=
+          "<li>manifest file returned a 404 or 410</li>";
+      });
+      appCache.addEventListener("progress", function () {
+        document.getElementById("output").innerHTML +=
+          "<li>Recource is being fetched from the cache</li>";
+      });
+    </script>
+    <style>
+      #output {
+        background-color: white;
+        float: left;
+        width: 200px;
+        margin-right: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>No Heading</h1>
+    <ol id="output"></ol>
+    <br />
+    <img
+      src="https://media2.giphy.com/media/5wG597QP1fjG7xIfte/giphy.gif"
+      alt="online/offline image"
+    />
+  </body>
+</html>

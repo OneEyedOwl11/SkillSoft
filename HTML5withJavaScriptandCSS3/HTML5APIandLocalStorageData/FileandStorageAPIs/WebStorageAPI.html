@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function count() {
+        if (typeof Storage !== "undifined") {
+          if (localStorage.current) {
+            localStorage.current = Number(localStorage.current) + 1;
+          } else {
+            localStorage.current = 1;
+          }
+          document.getElementById("result").innerHTML =
+            "You have clicked the button " + localStorage.current + " times";
+        } else {
+          alert("Sorry your browser does not support storage");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p><button onclick="count()" type="button">Count</button></p>
+    <div id="result"></div>
+  </body>
+</html>

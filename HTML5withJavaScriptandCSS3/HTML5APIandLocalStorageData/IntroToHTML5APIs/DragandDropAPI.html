@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 400px;
+        height: 250px;
+        padding: 10px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function drag(ev) {
+        ev.dataTransfer.setData("id", ev.target.id);
+      }
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("id");
+        ev.target.appendChild(document.getElementById(data));
+      }
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+    </script>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <img
+      src="https://i.ytimg.com/vi/TObBn68uRSA/maxresdefault.jpg"
+      alt="car"
+      id="drag1"
+      width="400"
+      draggable="true"
+      ondragstart="drag(event)"
+    />
+  </body>
+</html>
