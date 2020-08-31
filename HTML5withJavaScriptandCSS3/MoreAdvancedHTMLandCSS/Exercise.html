@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("div[attribute1='value1']").css(
+          "background",
+          "url('https://i.pinimg.com/originals/75/bb/1b/75bb1bde47020dd5c468acfeb3fd1460.jpg')"
+        );
+        $("div.outer2").css(
+          "background",
+          "linear-gradient(to right, blue,red,green)"
+        );
+      });
+    </script>
+    <style>
+      @font-face {
+        font-family: RofiTaste;
+        src: url(RofiTaste.otf);
+      }
+      .outer2 {
+        font-size: 12pt;
+      }
+      div {
+        margin: 15px;
+        padding: 5px;
+        width: 400px;
+        height: 250px;
+        float: left;
+        font-size: 24px;
+        border: 2px solid;
+        font-family: RofiTaste;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer2">Outer Outer</div>
+    <div class="outer2">Outer 2</div>
+    <div attribute1="value1">This is text</div>
+    <div attribute2="value2">more Text</div>
+    <div attribute3="value3">Even more text</div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid black;
+      }
+
+      div.card {
+        width: 500px;
+        height: 500px;
+      }
+      div.container {
+        height: 800px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" style="position: static">Static position</div>
+    <div class="card" style="position: absolute; top: 500px; left: 400px">
+      Absolute Position
+    </div>
+    <div class="card" style="position: fixed; top: 500px; left: 800px">
+      FixedPosition
+    </div>
+    <div class="container">
+      <div class="card" style="position: relative; top: 200px; left: 300px">
+        Relative Position
+      </div>
+    </div>
+  </body>
+</html>

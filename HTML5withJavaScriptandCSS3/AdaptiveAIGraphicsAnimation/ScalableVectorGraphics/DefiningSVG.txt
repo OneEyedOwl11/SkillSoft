@@ -1,0 +1,7 @@
+What is SVG (Scalable Vector Graphics)
+>Used for drawing 2-D vector graphics
+>Generated in such a way that it can be scaled to the user's view (Maintaining quality)
+>Defined in XML  allowing for manipulation
+>>Elements can be accessed through the DOM
+>>Elements can be styled using CSS 
+>>Events to handle user interactions can be created

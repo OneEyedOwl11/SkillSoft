@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("div.outer-outer").css("background-color", "red");
+        $("div.outer-outer div.inner").css("background-color", "blue");
+        $("div.outer, div.inner-inner").css("background-color", "yellow");
+      });
+    </script>
+    <style>
+      div {
+        width: 900px;
+        height: 200px;
+        border: 1px solid black;
+        padding: 15px;
+        margin: 5px;
+        position: relative;
+      }
+
+      div#main-section {
+        background-color: green;
+      }
+
+      div.footer.section {
+        background: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-outer">
+      Outer Outer
+      <div class="outer">
+        Outer
+        <div class="inner">
+          Inner
+          <div class="inner-inner">Inner Inner</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-section">Main Section</div>
+    <div class="footer section">Footer Section</div>
+  </body>
+</html>

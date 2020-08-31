@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+      #gradient1 {
+        background: blue;
+        background: -webkit-linear-gradient(left, blue, red, green);
+        background: -o-linear-gradient(right, blue, red, green);
+        background: -moz-linear-gradient(right, blue, red, green);
+        background: linear-gradient(right, blue, red, green);
+      }
+
+      #gradient2 {
+        background: red;
+        background: -webkit-repeating-linear-gradient(
+          -45deg,
+          red 0%,
+          yellow 20%
+        );
+        background: -o-repeating-linear-gradient(-45deg, red 0%, yellow 20%);
+        background: -moz-repeating-linear-gradient(-45deg, red 0%, yellow 20%);
+        background: repeating-linear-gradient(-45deg, red 0%, yellow 20%);
+      }
+
+      #gradient3 {
+        background: red;
+        background: -webkit-radial-gradient(
+          20% 40%,
+          farthest-side,
+          red,
+          yellow
+        );
+        background: -o-radial-gradient(20% 40%, farthest-side, red, yellow);
+        background: -moz-radial-gradient(20% 40%, farthest-side, red, yellow);
+        background: radial-gradient(20% 40%, farthest-side, red, yellow);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gradient1"></div>
+    <div id="gradient2"></div>
+    <div id="gradient3"></div>
+  </body>
+</html>
