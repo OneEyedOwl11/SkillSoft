@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <button id="check" onclick="check();">Check</button>
+    <p id="demo"></p>
+    <p id="done"></p>
+
+    <script>
+      function check() {
+        try {
+          if (!document.getElementById("input").value) {
+            throw "You didn't enter anything";
+          }
+          var value = document.getElementById("input").value;
+          if (value > 5) {
+            throw "too large";
+          } else if (value < 0) {
+            throw "too small";
+          } else {
+            document.getElementById("demo").innerHTML = "You entered " + value;
+          }
+        } catch (err) {
+          document.getElementById("demo").innerHTML = err;
+        } finally {
+          document.getElementById("done").innerHTML = "finished";
+        }
+      }
+    </script>
+  </body>
+</html>

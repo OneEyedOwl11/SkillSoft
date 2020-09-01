@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg width="500" height="200" style="border: 1px dashed">
+      <defs>
+        <linearGradient id="myGradient">
+          <stop offset="5%" stop-color="white"></stop>
+          <stop offset="95%" stop-color="blue"></stop>
+        </linearGradient>
+      </defs>
+      <text
+        x="10"
+        y="60"
+        style="
+          font-family: 'Times New Roman';
+          font-size: 55px;
+          stroke: red;
+          fill: url(#myGradient);
+        "
+        transform="rotate(30, 10, 60)"
+      >
+        Hello World!
+      </text>
+    </svg>
+  </body>
+</html>

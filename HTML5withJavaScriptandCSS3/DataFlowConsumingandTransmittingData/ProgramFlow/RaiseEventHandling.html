@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function doSth(p) {
+        p.innerHTML = "Hello World2!!!!";
+      }
+    </script>
+    <p onclick="this.innerHTML = 'Hello World!'">Click Me.</p>
+    <p onclick="doSth(this)">Click Me.</p>
+    <p onclick="(function (p) { p.innerHTML = 'Hello World3!!!!'; })(this)">
+      This Stuff Clicks
+    </p>
+  </body>
+</html>

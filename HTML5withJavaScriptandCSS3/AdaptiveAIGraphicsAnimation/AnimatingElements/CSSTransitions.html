@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 100px;
+        transition: 0.25s;
+        -webkit-transition: 0.25s;
+        transition-delay: 0.2s;
+        -webkit-transition-delay: 0.2s;
+        transition-property: width;
+        -webkit-transition-property: width;
+        transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+      }
+
+      input:focus {
+        width: 200px;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" />
+  </body>
+</html>
