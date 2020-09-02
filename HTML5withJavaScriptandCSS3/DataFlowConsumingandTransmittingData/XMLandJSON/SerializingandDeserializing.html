@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+  <body>
+    <form id="requestForm">
+      <input type="text" name="text1" />
+      <input type="text" name="text2" />
+    </form>
+
+    <button onclick="doSerialize()">Serialize</button>
+    <div id="demo"></div>
+
+    <script>
+      function doSerialize() {
+        $("#demo").html($("#requestForm").serialize());
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+what is AJAX
+>It is a group of technologies 
+>it stands for asynchronous JavaScript and XML 
+>>But JSON is generally used more than XML in real world scenarios
+
+>It allows the webpage to dynamically communicate with a remote server 
+>it does this with the XMLHttpRequest object 
+
+how XMLHttpRequest works
+>create an XMLHttpRequest object 
+>specify the method and URL in the open() method
+>>a optional third parameter can be set to false to force an synchonous request 
+>>The method is usually 'GET'
+>Send the request using the send() method
+>Create an event handler to fire when the request completes
+>>The status, getResponseHeader() and readyState should be checked 
+
+>A try, catch block should be used to catch network errors

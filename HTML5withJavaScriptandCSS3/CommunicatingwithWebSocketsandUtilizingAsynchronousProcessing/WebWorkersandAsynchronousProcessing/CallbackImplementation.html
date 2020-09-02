@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Time: <output id="result1"></output></p>
+    <button onclick="startWorker1()">Start Worker1</button>
+    <button onclick="sendMessage1()">Send message</button>
+    <button onclick="stopWorker1()">Stop Worker1</button>
+
+    <script>
+      var w1;
+
+      function startWorker1() {
+        if (typeof Worker !== "undefined") {
+          if (typeof w1 == "undefined") {
+            w1 = new Worker("demo_workers.js");
+          }
+          w1.onmessage = function (evt) {
+            document.getElementById("result1").innerHTML = evt.data;
+          };
+        } else {
+          alert("Sorry your browser does not support web worker");
+        }
+      }
+
+      function sendMessage1() {
+        w1.postMessage(10000);
+      }
+
+      function stopWorker1() {
+        w1.terminate();
+        w1 = undefined;
+      }
+    </script>
+  </body>
+</html>

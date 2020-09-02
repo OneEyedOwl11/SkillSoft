@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Time: <output id="result1"></output></p>
+    <button onclick="startWorker1()">Start Worker1</button>
+    <button onclick="sendMessage1()">Send Message1</button>
+    <button onclick="stopWorker1()">Stop Worker1</button>
+
+    <p>Time: <output id="result2"></output></p>
+    <button onclick="startWorker2()">Start Worker2</button>
+    <button onclick="sendMessage2()">Send message2</button>
+    <button onclick="stopWorker2()">Stop Worker2</button>
+
+    <script>
+      var w2;
+
+      function startWorker2() {
+        if (typeof SharedWorker !== "undefined") {
+          if (typeof w2 == "undefined") {
+            w2 = new SharedWorker("share_demoWorker.js");
+            w2.port.addEventListener(
+              "message",
+              function (evt) {
+                document.getElementById("result2").innerHTML = evt.data;
+              },
+              false
+            );
+            w2.port.start();
+          }
+        } else {
+          alert("shared worker not supported");
+        }
+      }
+
+      function sendMessage2() {
+        w2.port.postMessage(10000);
+      }
+
+      function stopWorker2() {
+        w2.port.close();
+        w2 = undefined;
+      }
+    </script>
+  </body>
+</html>

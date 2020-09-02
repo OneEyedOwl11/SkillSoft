@@ -1,0 +1,5 @@
+What is a WebSocket >It is a method for creating a connection between client and
+a server >It provides methods to send and retrieve messages (full-duplex) >It
+uses the protocol specifications ws and wss The parts of a webSocket
+>Initializing the connection (HTTP Upgrade Request) >sending and recieving
+(bidirectional) messages >Colsing the connection

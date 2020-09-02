@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+  <body>
+    <form id="requestForm">
+      <input type="text" name="requestForm" />
+    </form>
+    <button onclick="sendDoc()">Send</button>
+    <p id="demo"></p>
+    <script>
+      function sendDoc() {
+        var request = JSON.stringify(
+          objectifyForm($("#requestForm").serializeArray())
+        );
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 1) {
+            console.log("open has been called");
+          }
+          if (this.readyState == 2) {
+            console.log("send has been called");
+          }
+          if (this.readyState == 3) {
+            console.log("data is downloading");
+          }
+          if (this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(this.responseText);
+            document.getElementById("demo").innerHTML =
+              response.requestText + " " + response.requestText2;
+          }
+        };
+        xhttp.open("POST", "echoJSON.aspx?");
+        xhttp.send(request);
+      }
+
+      function objectifyForm(formArray) {
+        var returnArray = {};
+        for (var i = 0; i < formArray.length; i++) {
+          returnArray[formArray[i]["name"]] = formArray[i]["value"];
+        }
+        return returnArray;
+      }
+    </script>
+  </body>
+</html>

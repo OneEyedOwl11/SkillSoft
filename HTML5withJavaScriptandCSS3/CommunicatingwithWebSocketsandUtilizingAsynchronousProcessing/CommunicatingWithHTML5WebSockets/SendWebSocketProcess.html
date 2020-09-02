@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        display: block;
+      }
+    </style>
+
+    <script>
+      var ws;
+      function WebSocketOpen() {
+        if ("WebSocket" in window) {
+          ws = new WebSocket("ws://localhost:8080/echo/timerWS");
+
+          ws.onopen = function () {
+            alert("WebSocket is Connected");
+          };
+
+          ws.onmessage = function () {
+            var recieved_msg = evt.data;
+            console.log("Message is recieved .... " + recieved_msg);
+          };
+          ws.onclose = function () {
+            alert("WebSocket is closed");
+          };
+        } else {
+          alert("WebSocket is not supported by your browser!");
+        }
+      }
+      function WebSocketSend() {
+        ws.send("Hello world!!!!");
+      }
+
+      function WebSocketClose() {
+        ws.close();
+      }
+    </script>
+  </head>
+  <body>
+    <a href="javascript:WebSocketOpen()">Open WebSocket</a><br />
+    <a href="javascript:WebSocketSend()">Send Message</a><br />
+    <a href="javascript:WebSocketClose()">Close WebSocket</a><br />
+  </body>
+</html>

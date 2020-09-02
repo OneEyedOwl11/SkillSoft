@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="loadDoc()">Send</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function loadDoc() {
+        var xhhtp = new XMLHttpRequest();
+        xhhtp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(this.responseText, "text/xml");
+            document.getElementById("demo").innerHTML =
+              xmlDoc.getElementsByTagName("firstName")[0].childNodes[0]
+                .nodeValue +
+              " " +
+              xmlDoc.getElementsByTagName("lastName")[0].childNodes[0]
+                .nodeValue;
+          }
+        };
+        xhhtp.open("GET", "ping.xml");
+        xhhtp.send();
+      }
+    </script>
+  </body>
+</html>

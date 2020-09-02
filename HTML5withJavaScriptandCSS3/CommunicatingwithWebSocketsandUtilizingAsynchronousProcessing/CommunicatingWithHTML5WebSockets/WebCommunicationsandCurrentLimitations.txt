@@ -1,0 +1,4 @@
+Limitations
+>Browsers may have preconfigured (and user configurable) connection limits
+>Server loads can be significantly impacted because of concurrent connections
+>There can be delays when opening and closing the WebSocket that must be handled

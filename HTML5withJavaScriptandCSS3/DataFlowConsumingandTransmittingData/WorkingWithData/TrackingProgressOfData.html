@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+  <body>
+    <form id="requestForm">
+      <input type="text" name="requestForm" />
+    </form>
+    <button onclick="sendDoc()">Send</button>
+    <p id="demo"></p>
+    <script>
+      function sendDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 1) {
+            console.log("open has been called");
+          }
+          if (this.readyState == 2) {
+            console.log("send has been called");
+          }
+          if (this.readyState == 3) {
+            console.log("data is downloading");
+          }
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("POST", "echo.aspx?" + $("#requestText").serialize());
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="startRegular()">Start Regular Process</button>
+    <p>Regular Task: <output id="rResult"></output></p>
+
+    <button onclick="startWebWorker()">Start Web Worker</button>
+    <p>WebWorker Task: <output id="wResult"></output></p>
+
+    <script>
+      function startWebWorker() {
+        for (c = 1; c <= 5; c++) {
+          var worker = new Worker("busy_workers.js");
+          worker.onmessage = function (evt) {
+            console.log("done" + evt.data);
+            document.getElementById("wResult").innerHTML = "done";
+          };
+          worker.postMessage(c);
+        }
+      }
+
+      function startRegular() {
+        for (c = 1; c <= 5; c++) {
+          sleep(1000);
+          console.log("done" + c);
+        }
+        document.getElementById("rResult").innerHTML = "done";
+      }
+
+      function sleep(ms) {
+        var date = new Date();
+        var currentDate = null;
+        do {
+          currentDate = new Date();
+        } while (currentDate - date < ms);
+      }
+    </script>
+  </body>
+</html>

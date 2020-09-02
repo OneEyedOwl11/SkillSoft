@@ -1,0 +1,24 @@
+what is a web worker
+>it is like a thread 
+>it allows a script fileor JavaScript code to run in the background (usually in parallel)
+>This can help a site feeling responsive during larger processing tasks 
+
+How are web workers different from real threads
+>they do not support most threading features, like semaphores and mutexes 
+>It does not have access to recources outside of it's own code 
+>Data must be passed into and retrieved from the web workers via messages
+
+When should web workers be used 
+>when a task/process can be done in paralled
+>when page performance may be affected by 
+>>Slow I/O operations 
+>>Large calculations
+
+Types of Web Workers 
+>Dedicated
+>>Limited to the page that created it 
+>>Closing the page terminates the web worker 
+
+>Shared
+>>Pages within the same web application can communicate with it 
+>>Leaving the web App terminates the web worker 
