@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        column-count: 3;
+      }
+      .news {
+        background-color: lightcoral;
+        padding: 15px;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+      }
+      .menu {
+        background-color: lightcoral;
+        padding: 15px;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+      }
+      .menu p {
+        padding: 15px;
+        text-align: center;
+      }
+      .col-1,
+      .col-2,
+      .col-3 {
+        width: 100%;
+        float: left;
+        padding: 15px;
+      }
+
+      @media only screen and (min-width: 600px),
+        print and (orientation: landscape) {
+        .col-1 {
+          width: 25%;
+        }
+        .col-2 {
+          width: 75%;
+        }
+        .col-3 {
+          width: 100%;
+        }
+      }
+
+      @media only screen and (min-width: 768px) {
+        .col-1 {
+          width: 25%;
+        }
+        .col-2 {
+          width: 50%;
+        }
+        .col-3 {
+          width: 25%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="col-1 menu">
+        <div>History</div>
+        <div>Properties and structure</div>
+        <div>Formation and Evolution</div>
+        <div>Observational Evidence</div>
+      </div>
+
+      <div class="col-2">
+        <h1>Lorem, ipsum.</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id,
+          aspernatur aliquid molestias quo nesciunt quia sunt qui pariatur omnis
+          expedita ad, quam recusandae quod delectus laborum ut in! Ipsa aliquam
+          tempora consequuntur aut vel quaerat inventore dolorum nulla suscipit
+          ullam eligendi debitis officia, odio modi fugiat ipsam magnam facilis
+          omnis.
+        </p>
+      </div>
+
+      <div class="col-3">
+        <div class="news">
+          <h2>Title 1</h2>
+          <p>message body</p>
+          <h2>Title 2</h2>
+          <p>message body</p>
+          <h2>Title 3</h2>
+          <p>message body</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

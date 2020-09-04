@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#data_sheet").submit(function (event) {
+          var field1 = $("#field1").val();
+          if (!field1) {
+            alert("Field 1 is required");
+            return false;
+          }
+          var field2 = $("#field2").val();
+          if (!field2) {
+            alert("Field 2 is required");
+            return false;
+          }
+          var field3 = $("#field3").val();
+          if (!field3) {
+            alert("Field 3 is required");
+            return false;
+          }
+          if (field3.length < 5) {
+            alert("field 3 is too short");
+            return false;
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form id="data_sheet">
+      Field 1:
+      <input type="text" name="field1" id="field1" pattern="^([A-F\d])*$" />
+      Field 2:
+      <input
+        type="number"
+        name="field2"
+        id="field2"
+        max="100"
+        min="0"
+        step="5"
+      />
+      field 3: <input type="password" name="field3" id="field3" />
+      <button id="submit_bt">Submit</button>
+    </form>
+  </body>
+</html>

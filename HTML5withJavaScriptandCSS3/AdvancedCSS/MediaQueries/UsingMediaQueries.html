@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: yellow;
+      }
+
+      div {
+        border: 1px solid red;
+      }
+
+      @media only screen and (hover: hover) {
+        body {
+          background-color: lightblue;
+        }
+      }
+
+      @media (color) {
+        div {
+          border: 1px solid blue;
+        }
+      }
+
+      @media not (color) {
+        div {
+          border: 3px solid black;
+        }
+        body {
+          background-color: #fff;
+        }
+      }
+
+      @media (orientation: landscape) {
+        body {
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quasi sunt
+      dolore harum mollitia reiciendis nobis quae a, accusantium aperiam.
+    </div>
+
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat officiis
+      laboriosam veniam.
+    </div>
+  </body>
+</html>

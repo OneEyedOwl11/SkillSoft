@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input:required {
+      border: 2px solid green;
+    }
+
+    form.touched input:invalid {
+      border: 2px solid red;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('input[type="submit"]').click(function () {
+        $('form').addClass('touched');
+      });
+    });
+  </script>
+</head>
+<body>
+  <form>
+    First Name:
+      <input
+        type="text"
+        name="fName"
+        autocomplete="on"
+        placeholder="First Name"
+        required
+        autofocus
+      />
+      Last Name:
+      <input
+        type="text"
+        name="lName"
+        autocomplete="off"
+        placeholder="Last Name"
+        required
+      />
+      <input type="submit" />
+    </form>
+  </form>
+</body>
+</html>

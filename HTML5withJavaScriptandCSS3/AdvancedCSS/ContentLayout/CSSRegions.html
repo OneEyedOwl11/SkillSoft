@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        -webkit-flow-into: mycontent;
+        -ms-flow-into: mycontent;
+      }
+      .myregion {
+        -webkit-flow-from: mycontent;
+        -ms-flow-from: mycontent;
+        float: left;
+        width: 350px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="region-content.html" class="content"></iframe>
+    <div class="myregion" id="region1"></div>
+    <div class="myregion" id="region2"></div>
+    <div class="myregion" id="region3"></div>
+  </body>
+</html>

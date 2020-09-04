@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#submit_bt").click(function (event) {
+          event.preventDefault();
+          var birthday = $("#birthdate").val();
+          if (new Date(birthday) > new Date()) {
+            alert("Birthday is out of range");
+            return false;
+          }
+          $("#data_sheet").submit();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form id="data_sheet">
+      BirthDate:
+      <input
+        type="date"
+        name="birthdate"
+        id="birthdate"
+        placeholder="birth date"
+      />
+      <button id="submit_bt">Submit</button>
+    </form>
+  </body>
+</html>

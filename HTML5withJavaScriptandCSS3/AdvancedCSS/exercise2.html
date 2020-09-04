@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: repeat(2, 100px);
+      }
+
+      .one {
+        border-color: red;
+        grid-row: 1;
+        grid-column: 1/3;
+      }
+      .two {
+        grid-column: 3/3;
+        grid-row: 1/3;
+        border-color: orange;
+      }
+      .three {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        border-color: yellow;
+      }
+      .four {
+        grid-column: 3/3;
+        grid-row: 2;
+        border-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="one">one</div>
+      <div class="two">two</div>
+      <div class="three">three</div>
+      <div class="four">four</div>
+    </div>
+  </body>
+</html>

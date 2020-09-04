@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        max-width: 100%;
+      }
+      .wrapper {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 700px;
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        -ms-grid-rows: auto auto auto auto auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, auto);
+      }
+      .wrapper .inner {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 6;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 5;
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 5;
+      }
+
+      .wrapper .exclusion1 {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        -ms-wrap-flow: both;
+        -webkit-wrap-flow: both;
+        grid-column: 1;
+        grid-row: 1;
+        padding: 5px 10px;
+      }
+
+      .wrapper .exclusion2 {
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+        -ms-wrap-flow: both;
+        -webkit-wrap-flow: both;
+        grid-column: 2;
+        grid-row: 2;
+        padding: 5px 10px;
+      }
+
+      .wrapper .exclusion3 {
+        -ms-grid-column: 3;
+        -ms-grid-row: 3;
+        -ms-wrap-flow: both;
+        -webkit-wrap-flow: both;
+        grid-column: 3;
+        grid-row: 3;
+        padding: 5px 10px;
+      }
+
+      .wrapper .exclusion4 {
+        -ms-grid-column: 4;
+        -ms-grid-row: 4;
+        -ms-wrap-flow: both;
+        -webkit-wrap-flow: both;
+        grid-column: 4;
+        grid-row: 4;
+        padding: 5px 10px;
+      }
+
+      .wrapper img {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inner">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+          praesentium vero quod nam hic modi, tempore accusamus obcaecati?
+          Nesciunt repellendus enim obcaecati atque eum id ut praesentium eos
+          sunt vero ipsum deserunt nihil cumque odit, voluptatum dolor quaerat
+          maiores repudiandae adipisci autem perspiciatis quisquam perferendis
+          quis quod! Non laborum ab totam veniam aliquid libero nesciunt sit
+          voluptatem voluptas? Vitae, expedita laborum! Dolore iusto
+          voluptatibus aut itaque modi libero, eveniet voluptas magnam fugiat
+          cumque ipsa tempore odit fugit optio ut aspernatur dicta nobis esse
+          alias ea beatae fuga dignissimos. Aspernatur autem beatae ipsam quas
+          rem nulla facilis, sunt fugiat saepe vitae. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Rem recusandae vitae eum laborum
+          eligendi voluptatibus eveniet non, aliquam minima consequatur debitis,
+          necessitatibus distinctio ipsa deleniti. Assumenda, doloribus
+          delectus! Laborum, nulla! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Saepe excepturi dolorem nihil ipsa, doloribus nulla.
+          Iure quidem magnam in, culpa natus corrupti assumenda accusantium quas
+          suscipit consequatur porro sit soluta.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+          esse doloribus accusamus, quisquam fugiat iusto, explicabo voluptas
+          quos error nemo at. Fugit magnam id exercitationem, voluptates nihil
+          odio distinctio officia veritatis commodi molestiae accusamus cumque
+          hic, natus quibusdam animi ex voluptas impedit magni, doloribus cum!
+          Suscipit minus, odio minima aperiam itaque tempore ipsa magni,
+          voluptatibus quae officia perferendis illo labore iusto et alias fuga
+          officiis? Quam numquam ut ab doloribus praesentium autem ratione,
+          nostrum quaerat nesciunt voluptas eius sequi quasi officiis sint minus
+          aliquid officia fugiat voluptatem, explicabo natus. Autem numquam
+          impedit nulla commodi est sed repudiandae voluptatum aliquid eum!
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut saepe at
+          non eveniet? Nostrum cupiditate alias, fuga consectetur beatae eveniet
+          quis voluptatem enim voluptas repellendus, tenetur, facere aspernatur
+          exercitationem quos. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Hic dolorem error quo atque sapiente nesciunt
+          corrupti maxime, dolore nihil voluptates voluptatem cumque! Quia ad
+          illum sed autem aut accusamus sit?
+        </p>
+      </div>
+      <div class="exclusion1">
+        <img
+          src="https://r1.ilikewallpaper.net/iphone-x-wallpapers/download/92184/Butterfly-iphone-x-wallpaper-ilikewallpaper_com.jpg"
+        />
+      </div>
+      <div class="exclusion2">
+        <img
+          src="https://i.pinimg.com/564x/34/46/8f/34468f05842b70198ca6c8ce0f749e14.jpg"
+        />
+      </div>
+      <div class="exclusion3">
+        <img
+          src="https://i.pinimg.com/564x/19/71/f1/1971f1fef31ff9eda072bf547dbfce0a.jpg"
+        />
+      </div>
+      <div class="exclusion4">
+        <img
+          src="https://i.pinimg.com/564x/07/e4/ad/07e4add12920725bb12625e5436a3273.jpg"
+        />
+      </div>
+    </div>
+  </body>
+</html>
