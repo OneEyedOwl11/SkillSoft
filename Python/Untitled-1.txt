@@ -1,0 +1,20 @@
+Dictionaries: Allow you to have values assigned to keys
+                keys are unique, values can be duplicate
+                unordered collection of key valued pairs
+                values looked up by keys
+                values can be simple or complex data
+                dictionaries are mutable
+
+Sets: Removes duplicate values when called on and orders the values
+        unordered collection of unique elements
+        cannot contain other mutable types eg list and dictionaries
+        can perform set operations such as union, intersection, difference
+
+similarities:   set and dict, They are both instantiated by curly braces {} 
+                dict and sets are unordered, lists are ordered
+                lists can have duplicates, sets cannot and dict's cannot have duplicate keys
+                lists can have nested complex data types so can dict's
+                sets cannot have nested complex data types
+                list elements can be looked up by index's
+                sets cannot be looked up
+                dicts can be looked up by keys
