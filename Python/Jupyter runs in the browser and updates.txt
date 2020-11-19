@@ -1,0 +1,14 @@
+Jupyter runs in the browser and updates in realtime
+
+print, len, min, max, type, round
+
+a variable is an object that you can insert values into
+correction
+container to store values
+can be any data type
+
+You can create strings by initialising it into a variable and eg 
+defined with single, double or triple quotes
+string_1 = "this is a string"
+or you could assign a string that already exists into another variable eg
+string_new1 = string_1 

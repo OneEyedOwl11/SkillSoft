@@ -1,0 +1,15 @@
+Tuples and lists contain multiple values within them
+correction
+
+Ordered Collective of elements
+ordering is preserved and is significant
+can contain elements of different data types
+index values start at 0
+both can be sliced
+
+
+tuples are immutable and therefore cannot be modified unlike lists
+corrections
+
+lists are in []
+tuples are in ()
