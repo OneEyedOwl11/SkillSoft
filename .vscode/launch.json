@@ -5,6 +5,41 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Launch CartTwo",
+      "request": "launch",
+      "mainClass": "Java.JavaSE8ProgrammerOne.ManagingMultipleItems.CartTwo",
+      "projectName": "SkillSoft_2f36235a"
+    },
+    {
+      "type": "java",
+      "name": "Launch UsingString",
+      "request": "launch",
+      "mainClass": "Java.JavaSE8ProgrammerOne.DataInTheCart.UsingString",
+      "projectName": "SkillSoft_2f36235a"
+    },
+    {
+      "type": "java",
+      "name": "Launch IntAndDouble",
+      "request": "launch",
+      "mainClass": "Java.JavaSE8ProgrammerOne.DataInTheCart.IntAndDouble",
+      "projectName": "SkillSoft_2f36235a"
+    },
+    {
+      "type": "java",
+      "name": "Launch UsingString",
+      "request": "launch",
+      "mainClass": "Java.JavaSE8ProgrammerOne.UsingString",
+      "projectName": "SkillSoft_2f36235a"
+    },
+    {
+      "type": "java",
+      "name": "Launch Hello",
+      "request": "launch",
+      "mainClass": "Java.JavaSE8ProgrammerOne.JavaMainClass.Hello",
+      "projectName": "SkillSoft_2f36235a"
+    },
+    {
       "name": "(gdb) Launch",
       "type": "cppdbg",
       "request": "launch",
